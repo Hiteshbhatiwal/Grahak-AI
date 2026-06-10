@@ -1,0 +1,7 @@
+customerID,gender,SeniorCitizen,tenure,MonthlyCharges,TotalCharges,Churn
+7590-VHVEG,Female,0,1,29.85,29.85,No
+5575-GNVDE,Male,0,34,56.95,1889.5,No
+3668-QJUXO,Male,0,2,53.85,108.15,Yes
+7469-LKCVX,Female,0,12,70.6, ,No
+8451-BYRNY,Male,1,4,105.0,invalid_float,Yes
+,Female,0,10,50.0,500.0,No

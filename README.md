@@ -1,4 +1,4 @@
-# 🤖 Grahak AI — Customer Retention Intelligence Platform
+#  Grahak AI — Customer Retention Intelligence Platform
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 [![Framework](https://img.shields.io/badge/framework-Streamlit-FF4B4B.svg)](https://streamlit.io/)
@@ -9,7 +9,7 @@ Grahak AI is an end-to-end, proactive customer retention and intelligence platfo
 
 ---
 
-## 📈 Business Problem
+##  Business Problem
 Customer cancellation (churn) represents a massive, often silent leak in subscription-based and enterprise business models. Key challenges include:
 * **Late Detection:** Identifying churn signals only after a customer has decided to cancel.
 * **Lack of Prioritization:** High-value customers and low-value accounts receive the same general treatment.
@@ -18,7 +18,7 @@ Customer cancellation (churn) represents a massive, often silent leak in subscri
 
 ---
 
-## 💡 Solution
+##  Solution
 Grahak AI solves these problems by providing an automated, closed-loop retention intelligence workflow:
 1. **automated ETL Data Processing:** Standardizes customer data pipelines and ingests them into SQLite.
 2. **Predictive Churn Scoring:** Dynamically assigns risk metrics based on customer tenure, spend trends, and monthly rates.
@@ -28,7 +28,7 @@ Grahak AI solves these problems by providing an automated, closed-loop retention
 
 ---
 
-## ✨ Key Features
+##  Key Features
 * **Live Revenue Protection Dashboard:** Compact above-the-fold grid displaying total revenue protected, recovery efficiency, and real-time revenue timeline steps.
 * **Executive Presentation Mode:** Embedded 6-slide deck explaining the product mission, problem space, architecture, and business metrics.
 * **Interactive Customer Workspace:** Select custom customer profiles to examine churn score indicators, CLV, and revenue at risk.
@@ -37,7 +37,7 @@ Grahak AI solves these problems by providing an automated, closed-loop retention
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 * **Frontend Dashboard:** [Streamlit](https://streamlit.io/) (configured with a warm beige VoteChain-inspired SaaS styling)
 * **Data Processing:** [Pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/)
 * **Database & Ingestion:** [SQLite3](https://docs.python.org/3/library/sqlite3.html)
@@ -46,7 +46,7 @@ Grahak AI solves these problems by providing an automated, closed-loop retention
 
 ---
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 ```mermaid
 graph TD
@@ -66,7 +66,7 @@ For a detailed review, check our [System Architecture Guide](file:///c:/Users/DE
 
 ---
 
-## ⚙️ Installation & Local Setup
+##  Installation & Local Setup
 
 ### Prerequisites
 * Python 3.8 or higher installed on your system.
@@ -109,7 +109,7 @@ For a detailed review, check our [System Architecture Guide](file:///c:/Users/DE
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 ```
 Grahak-AI/
 ├── assets/                  # Project assets (visual branding)
@@ -136,7 +136,7 @@ Grahak-AI/
 
 ---
 
-## 📸 Dashboard Screenshots Section
+##  Dashboard Screenshots Section
 
 Below are the primary visual highlights of the Grahak AI interface (once captured and placed in `assets/screenshots/`):
 
@@ -148,7 +148,7 @@ Below are the primary visual highlights of the Grahak AI interface (once capture
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 * **Automated Email Workflows:** Integration with SendGrid or SMTP to dispatch generated retention campaigns.
 * **CRM Integrations:** Direct hooks to sync retention priority tiers with Salesforce, HubSpot, or Zoho CRM.
 * **Machine Learning Models:** Upgrade the heuristic scoring engine to a predictive XGBoost or LightGBM model.
@@ -156,7 +156,7 @@ Below are the primary visual highlights of the Grahak AI interface (once capture
 
 ---
 
-## 📊 Business Impact
+##  Business Impact
 * **₹648.96 Lakh** Total Revenue at Risk from medium and high-risk accounts.
 * **₹194.69 Lakh** Expected Revenue Recovered by deploying automated campaign offers.
 * **30% Recovery Efficiency** overall across targeted pilot cohorts.

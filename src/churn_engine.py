@@ -1,6 +1,5 @@
 import sqlite3
 import pandas as pd
-import numpy as np
 import sys
 
 # Reconfigure stdout to use UTF-8 to prevent UnicodeEncodeError when printing checkmark on Windows
@@ -8,7 +7,7 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8")
 
 # PART 1: Connect to database and load customer data
-conn = sqlite3.connect("customerpulse.db")
+conn = sqlite3.connect("data/customerpulse.db")
 df = pd.read_sql_query("SELECT * FROM customers", conn)
 print(f"Customers loaded: {len(df)}")
 
@@ -97,4 +96,4 @@ top_10 = df[['customer_id', 'tenure', 'total_charges', 'churn_score', 'risk_cate
 ).head(10)
 print(top_10.to_string(index=False))
 
-print("\n✓ customer_features table saved to customerpulse.db")
+print("\n✓ customer_features table saved to data/customerpulse.db")

@@ -1,6 +1,5 @@
 import sqlite3
 import pandas as pd
-import numpy as np
 import sys
 
 # Reconfigure stdout to use UTF-8 to prevent UnicodeEncodeError when printing checkmark on Windows
@@ -8,7 +7,7 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8")
 
 # PART 1: Connect to database and load engineered customer features
-conn = sqlite3.connect("customerpulse.db")
+conn = sqlite3.connect("data/customerpulse.db")
 df = pd.read_sql_query("SELECT * FROM customer_features", conn)
 print(f"Records loaded: {len(df)}")
 
@@ -76,4 +75,4 @@ segment_df = segment_df.sort_values(by='total_revenue_at_risk', ascending=False)
 segment_df['total_revenue_at_risk'] = segment_df['total_revenue_at_risk'].apply(lambda x: f"${x:,.2f}")
 print(segment_df.to_string(index=False))
 
-print("\n✓ clv_features table saved to customerpulse.db")
+print("\n✓ clv_features table saved to data/customerpulse.db")

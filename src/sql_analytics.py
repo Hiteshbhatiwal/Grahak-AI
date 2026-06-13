@@ -2,7 +2,7 @@ import sqlite3
 import pandas as pd
 
 # Connect to the SQLite database
-conn = sqlite3.connect("customerpulse.db")
+conn = sqlite3.connect("data/customerpulse.db")
 
 # Query 1: Measure total revenue collected across all customers
 print("--- Total Revenue ---")

@@ -51,7 +51,7 @@ Grahak AI
     return email_body
 
 
-def process_retention_pipeline(db_path="customerpulse.db"):
+def process_retention_pipeline(db_path="data/customerpulse.db"):
     """
     Executes the ETL, decision logic, and calculation pipeline for the retention engine.
     
@@ -180,7 +180,7 @@ if __name__ == "__main__":
 
         print(top_10_print.to_string(index=False))
         print()
-        print("✓ retention_cards table saved to customerpulse.db")
+        print("✓ retention_cards table saved to data/customerpulse.db")
 
     except Exception as e:
         print(f"Error executing retention engine: {e}")

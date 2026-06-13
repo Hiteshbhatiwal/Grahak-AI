@@ -503,7 +503,7 @@ def load_data():
     Loads customer, CLV, and retention tables from SQLite database.
     """
     try:
-        conn = sqlite3.connect("customerpulse.db")
+        conn = sqlite3.connect("data/customerpulse.db")
         clv_features = pd.read_sql_query("SELECT * FROM clv_features", conn)
         retention_cards = pd.read_sql_query("SELECT * FROM retention_cards", conn)
         conn.close()

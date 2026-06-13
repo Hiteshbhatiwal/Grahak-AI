@@ -9,13 +9,13 @@ if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8")
 
 # Check if the source CSV file exists before attempting to read it
-if not os.path.exists("telecom_churn.csv"):
-    print("Error: The source file 'telecom_churn.csv' was not found in the current directory.")
+if not os.path.exists("data/telecom_churn.csv"):
+    print("Error: The source file 'data/telecom_churn.csv' was not found.")
     exit(1)
 
 # STEP 1 — LOAD
 # Read the CSV file into a Pandas DataFrame
-df = pd.read_csv("telecom_churn.csv")
+df = pd.read_csv("data/telecom_churn.csv")
 
 # Print the total number of rows loaded and the list of column names
 print(f"Total rows loaded: {len(df)}")
@@ -67,7 +67,7 @@ df = df[db_columns]
 # STEP 4 — LOAD INTO SQLITE
 try:
     # Connect to the SQLite database file
-    conn = sqlite3.connect("customerpulse.db")
+    conn = sqlite3.connect("data/customerpulse.db")
     cursor = conn.cursor()
     
     # Drop the existing customers table if it already exists
@@ -101,6 +101,6 @@ except sqlite3.Error as e:
 # Print the structured success log in the requested format
 print("✓ ETL Complete")
 print(f"✓ Rows Loaded: {len(df)}")
-print("✓ Database: customerpulse.db")
+print("✓ Database: data/customerpulse.db")
 print("✓ Table: customers")
 print(f"✓ Columns: {list(df.columns)}")
